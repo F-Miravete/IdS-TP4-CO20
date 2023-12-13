@@ -44,7 +44,7 @@ extern "C" {
 
 /**
  * @brief Función princial del proyecto
- *
+ * @param Ninguno
  * @return int Codigo de error devuelto al sistema operativo
  */
 int main(void);
