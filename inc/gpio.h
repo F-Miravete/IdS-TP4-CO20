@@ -56,10 +56,30 @@ typedef struct gpio_h * gpio_t;
  */
 gpio_t GpioCreate(uint8_t port, uint8_t bit);
 
+/**
+ * @brief Función para setear la funcion del pin (I/O)
+ *
+ * @param gpio Handle del GPIO
+ * @param output True indica Salida, False indica Entrada
+ * @return -
+ */
 void GpioSetDirection(gpio_t gpio, bool output);
 
+/**
+ * @brief Función para leer la funcion del pin (I/O)
+ *
+ * @param gpio Handle del GPIO
+ * @return tipo de GPIO: True = Salida , False = Entrada
+ */
 bool GpioGetDirection(gpio_t gpio);
 
+/**
+ * @brief Función para setear el valor de una salida GPIO
+ *
+ * @param gpio Handle del GPIO
+ * @param state Valor booleano de la salida
+ * @return -
+ */
 void GpioSetState(gpio_t gpio, bool state);
 
 /**
